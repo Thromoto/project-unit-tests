@@ -12,16 +12,15 @@
 */
 
 const average = (array) => {
-  let sum = 0;
+  // let sum = 0;
 
-  for (let number of array) {
-    if (array !== typeof Number || array === ['']) {
-    return undefined;
-  }
-    let numero = sum += number;
-  }
-  return numero = Math.round(sum / array.length);
-
+  // for (let number of array) {
+  //   if (array !== Typeof Number || array === ['']) {
+  //   return undefined;
+  // }
+  //   let numero = sum += number;
+  // }
+  // return numero = Math.round(sum / array.length);
 };
 
 module.exports = average;
