@@ -34,7 +34,7 @@ describe('4 - Implemente os casos de teste para a função `circle`', () => {
     // expect(circle(1).length).toBe(3);
 
     // Teste se a função, quando não recebe nenhum parâmetro, retorna undefined.
-    expect(circle('')).toBe(undefined);
+    expect(circle()).not.toBeDefined();
 
     // Teste se dentro do objeto retornado, a função retorna uma `key` com `value` igual à circunferência correta para um círculo de raio 2.
     expect(circle(2).circumference).toBeCloseTo(4 * 3.14);
