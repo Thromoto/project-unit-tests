@@ -35,16 +35,19 @@
 */
 
 const calculator = (number1, number2) => {
-  let calculos = { sum: parseInt(number1 + number2), mult: parseInt(number1 * number2), div: parseInt(number1 / number2), sub:parseInt(number1 - number2) };
+  let calculos = { sum: (number1 + number2), 
+    mult: (number1 * number2), 
+    div: Math.floor(number1 / number2), 
+    sub: (number1 - number2) };
   return calculos;
 };
 
 const arrayGenerator = (type, object) => {
   if (type === 'keys') {
     return Object.keys(object);
-  } else if (type === 'values') {
+  } if (type === 'values') {
     return Object.values(object);
-  } else if (type === 'entries') {
+  } if (type === 'entries') {
     return Object.entries(object);
   }
 };
