@@ -16,15 +16,16 @@ const average = (array) => {
     return undefined;
   }
   let soma = 0;
-  
-  for (let index = 0; index < array.length; index += 1) {
-    if (typeof array[index] !== 'number') {
+
+  for (let i of array) {
+    if (typeof i !== 'number') {
       return undefined;
     }
-    soma += array[index];
+    soma += i;
   }
-  soma = Math.round(soma) / array.length;
-  return Math.round(soma);
+
+  let ave = soma / array.length;
+  return Math.round(ave);
 };
 
 module.exports = average;
